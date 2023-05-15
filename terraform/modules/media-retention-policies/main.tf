@@ -115,7 +115,7 @@ resource "genesyscloud_recording_media_retention_policy" "sendsurvey_policy" {
                 delete_recording = false
                 always_delete    = false
                 assign_surveys {
-                    sending_domain = "<your-email-domain>"
+                    sending_domain = "email.europa-group.co.uk"
                     survey_form_name = genesyscloud_quality_forms_survey.survey_form.name 
                     flow_id = data.genesyscloud_flow.sendsurvey_flow.id
                 }
