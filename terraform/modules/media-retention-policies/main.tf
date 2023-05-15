@@ -25,7 +25,7 @@ data "genesyscloud_flow" "sendsurvey_flow" {
 }
 
 data "genesyscloud_routing_queue" "queue" {
-    name = "<your-queue-name>"
+    name = "TEST CHAT QUEUE"
 }
 
 resource "genesyscloud_quality_forms_survey" "survey_form" {
